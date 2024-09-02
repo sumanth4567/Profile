@@ -10,9 +10,10 @@ body{
     user-select: none;    
 }
 .main_heading{
+    max-width: 100%;
     margin:10px;
     text-align: center;
-    font-size: 40px;
+    font-size: 3em;
     font-family: monospace;
     /* border: 1px solid white; */
     border-radius: 20px;
@@ -484,4 +485,101 @@ body{
 }
 .social-platforms a:hover{
     color: gold;
+}
+
+@media only screen and (max-width : 426px) {
+    .main_heading{
+        width: 390px;
+        font-size: 13px;
+    }
+    .menu{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu a{
+        font-size: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .intro-photo{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 50vh;
+    }
+    .intro{
+        width: 100%;
+        height: 30%;
+    }
+    .intro p{
+        font-size: 12px;
+        padding-top:0px ;
+        padding-left: 20px;
+        margin-top: 30px;
+    }
+    .intro a{
+        font-size: 15px;
+    }
+    .photo{
+        height: 70%;
+        width: 50%;
+    }
+    #education{
+        margin-top: 30px;
+    }
+    .ed-heading{
+        font-size: 23px;
+        margin: 0px;
+    }
+    .ed-container{
+        display: grid;
+        grid-template-columns: auto;
+        height: auto;
+    }
+    .loc a{
+        font-size: 10px;
+    }
+    .skills-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        margin: auto;
+        width: 90%;
+        height: 500px;
+    }
+    #projects .ed-heading{
+        margin-bottom: 30px;
+    }
+    .pro-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+    }
+    .pro1 , .pro2 , .pro3 , .pro4{
+        width: 50%;
+        margin: 20px;
+    }
+    span{
+        font-size: 20px;
+    }
+    #conpa{
+        font-size: 10px;
+        margin-left: 27%;
+        margin-top: 20px;
+    }
+    .con-container{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+    }
+    .social-platforms{
+        height: 50px;
+        width: 150px;
+    }
+    .social-platforms a{
+        font-size: 13px;
+    }
 }
